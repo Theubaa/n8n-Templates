@@ -13,7 +13,7 @@ There are a few ways to utilize the n8n templates provided in this repository:
 
 The easiest way to use a template is to import its JSON file directly into your n8n instance.
 
-1.  **Browse the `templates` directory:** Navigate to the `templates` folder in this repository.
+1.  **Browse the relevant template directory:** Navigate into one of the category folders (e.g., `Database_and_Storage`, `Forms_and_Surveys`, etc.) in this repository.
 2.  **Select your desired template:** Choose the `.json` file for the workflow you want to use.
 3.  **Download the JSON file:** Click on the file, then click "Raw" to view the raw JSON, and save it to your computer (e.g., `my_workflow.json`).
 4.  **Open your n8n instance:** Go to your n8n dashboard.
@@ -26,7 +26,7 @@ The easiest way to use a template is to import its JSON file directly into your 
 
 You can also copy the raw JSON content and paste it into n8n.
 
-1.  **Browse the `templates` directory:** Navigate to the `templates` folder.
+1.  **Browse the relevant template directory:** Navigate into one of the category folders (e.g., `Database_and_Storage`, `Forms_and_Surveys`, etc.).
 2.  **Select your desired template:** Open the `.json` file.
 3.  **Copy the raw JSON:** Click the "Raw" button and copy all the content.
 4.  **Open your n8n instance:** Go to your n8n dashboard.
@@ -42,16 +42,19 @@ Even if you don't import them directly, these templates can serve as valuable re
 
 ## Available Templates
 
-Here's a list of the n8n templates currently available in this repository, along with a brief description of what each does:
+This repository categorizes n8n templates to help you find workflows relevant to specific areas of automation. Browse the directories below to find the templates you need:
 
-* **`template-name-1.json`**: Briefly describe what this template does (e.g., "Sends daily weather updates to Slack from OpenWeatherMap API.").
-* **`template-name-2.json`**: Briefly describe what this template does (e.g., "Automates creating a new Trello card when a new email arrives in Gmail with a specific subject.").
-* **`template-name-3.json`**: Briefly describe what this template does (e.g., "Synchronizes new contacts from Google Contacts to a Mailchimp audience.").
-* *(Add more entries here as you add more templates to your `templates` directory)*
+* **[`Database_and_Storage/`](./Database_and_Storage)**: Workflows for interacting with databases (e.g., SQL, NoSQL) and various storage solutions.
+* **[`Forms_and_Surveys/`](./Forms_and_Surveys)**: Automations related to form submissions, survey responses, and data collection.
+* **[`Gmail_and_Email_Automation/`](./Gmail_and_Email_Automation)**: Templates for automating email tasks, sending notifications, and processing incoming emails via Gmail and other email services.
+* **[`Google_Drive_and_Google_Sheets/`](./Google_Drive_and_Google_Sheets)**: Workflows to automate tasks with Google Drive (file management) and Google Sheets (data manipulation, reporting).
+* **[`PDF_and_Document_Processing/`](./PDF_and_Document_Processing)**: Templates for handling PDF files, extracting data, generating documents, and other document-related automation.
+* **[`WhatsApp/`](./WhatsApp)**: Workflows for sending and receiving messages, automating customer support, or integrating WhatsApp with other services.
+* **[`WordPress/`](./WordPress)**: Automations for WordPress websites, such as post creation, user management, and data synchronization.
 
 ---
 
-**Tip:** For each template you add, consider including a more detailed explanation in a sub-directory or a dedicated section if the description is longer.
+**Tip:** For each specific workflow (`.json` file) within these categories, consider adding a brief internal comment within the JSON or a small `README.md` file in its sub-directory to explain its exact purpose and any prerequisites.
 
 ---
 
@@ -63,8 +66,8 @@ To contribute:
 
 1.  **Fork** this repository.
 2.  **Create a new branch** for your feature or template (e.g., `git checkout -b add-my-awesome-template`).
-3.  **Add your n8n workflow's JSON file** to the `templates` directory. Please use a descriptive filename.
-4.  **Update this `README.md`** to include a brief description of your new template under the "Available Templates" section.
+3.  **Add your n8n workflow's JSON file** to the *appropriate category directory* (e.g., `Gmail_and_Email_Automation/my-new-gmail-workflow.json`). Please use a descriptive filename.
+4.  **Update this `README.md`** if you add a new category or significantly change an existing one's description.
 5.  **Open a Pull Request** with a clear description of your changes.
 
 ## License
